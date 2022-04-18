@@ -6,10 +6,11 @@
 #### Frontend
 1. Tailwindcss
 2. Vue.js
-## Installation
 
-## CRON job
+#### CRON job
 1. will create new records every minute `php artisan schedule:work`
+
+## Installation
 
 #### Backend
 1. Clone the project
