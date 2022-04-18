@@ -23,11 +23,11 @@ import PageComponent from '../components/PageComponent.vue';
 import FeedItem from '../components/Feed/FeedItem.vue';
 import store from '../store';
 
-const feeds = computed(() => store.state.feeds);
-
-const categories = [...new Set(feeds.value.map(feed => feed.category))];
 const filter = ref('');
+store.dispatch('getFeeds');
 
+const feeds = computed(() => store.state.feeds.data);
+const categories = computed(() => [...new Set(feeds.value.map(feed => feed.category))]);
 const filteredFeeds = computed(() => feeds.value.filter((feed) => {
   return feed.category.match(filter.value)
 }))

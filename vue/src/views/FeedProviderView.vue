@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 import PageComponent from "../components/PageComponent.vue"
@@ -27,9 +27,8 @@ const store = useStore()
 let feedProdiver = ref({})
 
 if (route.params.id) {
-  feedProdiver.value = store.state.feedProviders.find(
-    (feedProdiver) => feedProdiver.id === parseInt(route.params.id)
-  );
+  store.dispatch('getFeedProvider', route.params.id);
+  feedProdiver = computed(() => store.state.feedProvider.data);
 }
 </script>
 

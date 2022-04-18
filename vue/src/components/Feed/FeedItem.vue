@@ -5,10 +5,10 @@
       <div class="text-left font-bold">Provider:
         <span class="text-gray-500 underline">
           <router-link
-            :to="{ name: 'FeedProviderView', params: { id: props.feed.feedProdider.id }}"
+            :to="{ name: 'FeedProviderView', params: { id: props.feed.feedProvider.id }}"
             class="cursor-pointer hover:text-orange-400"
           >
-            {{ props.feed.feedProdider.name }}
+            {{ props.feed.feedProvider.name }}
           </router-link>
         </span>
       </div>
@@ -23,7 +23,7 @@
   <Modal v-if="isModalOpen" @close-modal="isModalOpen = false" >
     <template #title>
       <div class="flex justify-between">
-        <div class="text-left font-bold">Provider: <span class="text-gray-500 underline">{{ props.feed.feedProdider.name }}</span></div>
+        <div class="text-left font-bold">Provider: <span class="text-gray-500 underline">{{ props.feed.feedProvider.name }}</span></div>
         <div class="text-left font-bold">{{ props.feed.category }}</div>
       </div>
     </template>
