@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from '../views/Dashboard.vue'
 import FeedView from '../views/FeedView.vue'
+import FeedProviderView from '../views/FeedProviderView.vue'
 import DefaultLayout from '../components/DefaultLayout.vue'
 
 const routes = [
@@ -11,6 +12,7 @@ const routes = [
     children: [
       {path: '/dashboard', name: 'Dashboard', component: Dashboard },
       {path: '/feed/:id', name: 'FeedView', component: FeedView },
+      {path: '/provider/:id', name: 'FeedProviderView', component: FeedProviderView }
     ]
   }
 ]

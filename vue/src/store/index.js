@@ -50,9 +50,74 @@ const tmpFeeds = [
     }
   },
 ]
+
+const tpmFeedProviders = [
+  {
+    id: 12,
+    name: 'FeedProvider 1',
+    feeds: [
+      {
+        id: 103,
+        title: '1 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      },
+      {
+        id: 103,
+        title: '2 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      },
+      {
+        id: 103,
+        title: '3 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      }
+    ]
+  },
+  {
+    id: 13,
+    name: 'FeedProvider 2',
+    feeds: [
+      {
+        id: 103,
+        title: '1 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      },
+      {
+        id: 103,
+        title: '2 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      },
+      {
+        id: 103,
+        title: '3 feed title',
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim adipisci similique alias dicta aliquam, asperiores maiores earum itaque inventore nesciunt aliquid suscipit repellendus unde omnis fugiat, delectus cum dolores ipsum?',
+        category: 'Second category',
+        created_at: '2022-12-20 10:00:00',
+        updated_at: '2022-12-20 10:00:00',
+      }
+    ]
+  },
+]
+
 const store = createStore({
   state: {
     feeds: [...tmpFeeds],
+    feedProviders: [...tpmFeedProviders]
   },
   getters: {},
   actions: {},
