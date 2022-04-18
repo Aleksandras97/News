@@ -8,6 +8,9 @@
 2. Vue.js
 ## Installation
 
+## CRON job
+1. will create new records every minute `php artisan schedule:work`
+
 #### Backend
 1. Clone the project
 2. Go to the project root directory
